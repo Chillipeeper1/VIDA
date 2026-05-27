@@ -7,9 +7,9 @@ const worldGrid = () => {
   return (
     <div className="grid-container">
       {cells.map((index) => (
-        <div key={index} className="grid-cell">
+        <div key={index} className="grid-cell bg-green-100 ">
           {/* Cell content*/}
-          {"ola"}
+          {"0"}
         </div>
       ))}
     </div>
