@@ -1,15 +1,18 @@
 import React from "react";
 import "../components/Grid.css";
+import { createWorld } from "../engine/world";
+
+debugger;
 
 const worldGrid = () => {
   /* 20x20 cell drawing*/
-  const cells = Array.from({ length: 400 }, (_, i) => i);
+  const cells = createWorld();
   return (
     <div className="grid-container">
-      {cells.map((index) => (
+      {cells.flat().map((index) => (
         <div key={index} className="grid-cell bg-green-100 ">
           {/* Cell content*/}
-          {"0"}
+          {index}
         </div>
       ))}
     </div>

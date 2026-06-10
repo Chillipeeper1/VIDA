@@ -41,7 +41,7 @@ function randomEntities(matrix) {
 
     entities -= 1;
   }
-  console.table(matrix);
+
   return matrix;
 }
 
@@ -75,12 +75,5 @@ function updateWorld(matrix) {
       }
     }
   }
-  console.table(new_matrix);
   return new_matrix;
 }
-
-// Making 4 matrix
-let world = createWorld();
-world = updateWorld(world);
-world = updateWorld(world);
-world = updateWorld(world);
